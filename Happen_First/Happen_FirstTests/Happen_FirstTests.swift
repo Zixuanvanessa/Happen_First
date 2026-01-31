@@ -5,13 +5,14 @@
 //  Created by Vanessaw on 30/1/2026.
 //
 
-import Testing
+import XCTest
 @testable import Happen_First
 
-struct Happen_FirstTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class Happen_FirstTests: XCTestCase {
+    func testAppStateToggle() {
+        let s = AppState()
+        XCTAssertFalse(s.isActive)
+        s.isActive = true
+        XCTAssertTrue(s.isActive)
     }
-
 }
