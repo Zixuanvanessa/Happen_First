@@ -5,7 +5,6 @@
 //  Created by Vanessaw on 30/1/2026.
 //
 import SwiftUI //导入 SwiftUI 框架，提供声明式 UI
-
 @main //— 声明应用入口点
 struct Happen_FirstApp: App { //应用结构体，符合 SwiftUI 的 App 协议
     // 1. 全局共享状态对象，供 UI 与后台（AudioMonitor）使用
